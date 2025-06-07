@@ -1,0 +1,34 @@
+ #day{
+    color:red;
+    text-align:center;
+ }
+ #day1{
+    color:green;
+    text-align:center;
+ }
+#day2{
+    color:blue;
+    text-decoration:rgb(74, 38, 89) wavy underline;
+    text-align:center;
+
+}
+.div1{
+    background-color:pink;
+    text-align:center;
+    color:rgb(128, 0, 126);
+    height:200px;
+    width:100Spx;
+    border-radius:100%;
+
+}
+.div2{
+    background-color:aqua;
+    text-align:center;
+    color:brown;
+    border-radius:50%;
+}
+.div3{
+    background-color:bisque;
+    color:rgb(33, 23, 82);
+    text-align:center;
+}
