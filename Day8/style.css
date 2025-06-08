@@ -1,0 +1,59 @@
+#first {
+  background-color: yellow;
+  color: red;
+}
+#second {
+  background-color: orange;
+}
+.div1 {
+  background-color: pink;
+  color: brown;
+  text-align: center;
+  text-decoration: red wavy underline;
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+  padding-top: 25px;
+}
+.div2 {
+  display: inline-block;
+  background-color: rgb(242, 242, 187);
+  color: rgb(6, 36, 90);
+  text-align: center;
+  text-decoration: rgb(87, 13, 13) wavy underline;
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+  padding-right: 25px;
+  padding-top: 25px;
+  text-align:centre;
+}
+a {
+  text-decoration: none;
+}
+.div3 {
+  background-color: pink;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-top: 25px;
+}
+#box1 {
+width: 200px;           
+  height: 300px;
+  background-color: pink;
+  background-image: url("purnima.jpg");
+  background-size: cover;
+}
+body{
+    background-color: rgb(201, 233, 233);
+}
+.container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
