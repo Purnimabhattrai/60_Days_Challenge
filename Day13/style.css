@@ -13,19 +13,16 @@ div{
     transform:scale(2,1);
     first one for x then y
      */
-
 } 
 div:hover {
     background-color:red;
     color:white;
     font-size:30px;
      /* transform:scale(2);   */
-    /* transform:rotate(360deg);
- */
-
-     transform:translateX(100px);
+    /* transform:rotate(360deg);*/
+    transform:translate(100px,80px);
 }
-
 div:active{
     background-color:pink;
 }
+
