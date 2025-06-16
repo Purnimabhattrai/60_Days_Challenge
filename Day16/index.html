@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Front Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Hello Everyone!</h1>
+  <p>Welcome to this form</p>
+  <p>These are my socialmedia links</p>
+
+  <!-- Navigation Links -->
+  <nav>
+    
+    
+   
+    <a href="https://github.com/Purnimabhattrai" target="_blank">GitHub</a>
+    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+  </nav>
+
+  <!-- Form Section -->
+   <P>Enter your information here!!!</P>
+  <form action="/action.php">
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Address">
+    <input type="password" placeholder="Password">
+
+    <!-- Radio Buttons -->
+     <h4>Select your class</h4>
+    <label><input type="radio" name="class" value="class11"> Class 11</label>
+    <label><input type="radio" name="class" value="class12"> Class 12</label>
+
+    <!-- Checkboxes -->
+     <h3>Select your subjects</h3>
+    <label><input type="checkbox" name="subject" value="math"> Math</label>
+    <label><input type="checkbox" name="subject" value="c++"> C++</label>
+    <label><input type="checkbox" name="subject" value="physics"> Physics</label>
+
+
+    
+    <!-- Dropdown -->
+    <label for="course">Select your course:</label>
+    <select name="course" id="course">
+      <option value="bece">BECE</option>
+      <option value="it">IT</option>
+      <option value="civil">Civil</option>
+      <option value="software">Software</option>
+    </select>
+    <br>
+    <!-- Feedback -->
+    <textarea name="feedback" placeholder="Please enter your feedback here" rows="5" cols="30"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Embedded YouTube Video -->
+   <h3>Let's learn about the formation foundation of this form!!!</h3>
+  <div class="video-container">
+    <iframe 
+      width="300" 
+      height="180" 
+      src="https://www.youtube.com/embed/HcOc7P5BMi4" 
+      title="YouTube video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
