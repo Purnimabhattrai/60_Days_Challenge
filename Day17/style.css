@@ -1,0 +1,113 @@
+ /* CSS Variables */
+:root {
+  --primary-color: #4e89ae;
+  --accent-color: #f6c90e;
+  --text-color: #333;
+  --bg-color: #f0f4f8;
+}
+
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body and Header */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#main-header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container using Flex and Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Card Styles using Box Model */
+.card {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effect using transition */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Profile Image */
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* Animation using keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide {
+  animation: slideIn 0.8s ease;
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 600px) {
+  #main-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
