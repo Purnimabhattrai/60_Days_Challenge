@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: #ede4e2ef;
   color: #333;
 }
 
@@ -20,7 +20,7 @@ body {
 
 
 header {
-  background: #0077b6;
+  background: #8f47c2;
   color: white;
   padding: 60px 0;
   text-align: center;
@@ -29,7 +29,7 @@ header {
 
 
 nav {
-  background: #023e8a;
+  background: #8f47c2;
 }
 
 nav ul {
@@ -108,7 +108,7 @@ form textarea {
 
 form button {
   padding: 10px;
-  background: #0077b6;
+  background: #753eac;
   color: white;
   border: none;
   border-radius: 5px;
@@ -141,7 +141,6 @@ footer {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .skills-list {
     flex-direction: column;
