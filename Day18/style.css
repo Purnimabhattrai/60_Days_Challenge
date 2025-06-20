@@ -271,3 +271,86 @@ footer {
 .Link__discord:hover .discord {
   fill: white;
 }
+.project{
+  background-color:#af82cf;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.AboutMe {
+  flex: 1;
+  min-width: 280px;
+}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin-bottom: 1rem;
+  }
+}.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  border-radius: 20px;
+}
+.about-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(238, 232, 202, 0.6), 
+              0 0 40px rgba(241, 222, 113, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: goldenGlow 3s infinite alternate ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.AboutMe {
+  flex: 1;
+  min-width: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutMe h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.AboutMe p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.skills{
+  background-color:#cea0ef;
+  
+}
