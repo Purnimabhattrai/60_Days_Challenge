@@ -14,7 +14,7 @@
        let a=4;
        let b=8;
        let cond1= a<b; //true
-       let cond2= a===b; //false
-       console.log("cond1 && cond2=", cond1 && cond2);
-
+        let cond2= a===b; //false
+    // //    console.log("cond1 && cond2=", cond1 && cond2);
+     console.log("cond1 || cond2=",a<b|| a===6);
 
