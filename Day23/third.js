@@ -57,7 +57,7 @@
 //        console.log('step taken'+ip)
 //   }while(ip<=house)
 
-/////////guees the input game///////////////
+/////////guess the input game///////////////
 let number=9;
 
 let guess= 0;
