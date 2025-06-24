@@ -31,4 +31,13 @@ function addNumbers(){
 let result= addNumbers(10,20,4,40,50)
 console.log(result)
 
+//arrow functions
+//syntax:- const sayHelllo =()=> a+b{
+//     console.log("hey"); or 
+// return a+b;
+// }
+//arguments:- const addNumbers =(...nums)=>{ ///[.....nums.. is arrow function]
+    // console.log(nums);}
+    //add numbers(10,20,20,30);
+
    
