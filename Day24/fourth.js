@@ -42,4 +42,14 @@ console.log(result);
     // console.log(nums);}
     //add numbers(10,20,20,30);
 
+    // With parameters
+const add = (a, b) => a + b;
+
+// With a single parameter (parentheses optional)
+const square = x => x * x;
+
+// With no parameters (parentheses required)
+const greet = () => "Hello!";
+
+
    
