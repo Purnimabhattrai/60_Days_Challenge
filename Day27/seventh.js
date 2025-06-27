@@ -18,11 +18,11 @@ console.log(students);
 students.pop();
 console.log(students);
 
-// //homogenous and heterogenous array//
-// //js supports heterogenous array ie: it can store int,string,boolean and also stickers//
+//homogenous and heterogenous array//
+//js supports heterogenous array ie: it can store int,string,boolean and also stickers//
 
-// const myarray=[1,true,"Purnima","🔥"];
-// console.log(myarray);
+const myarray=[1,true,"Purnima","🔥"];
+console.log(myarray);
 
 // ///how to find the index no of certain value//
 // console.log(myarray.indexOf("Purnima"));
