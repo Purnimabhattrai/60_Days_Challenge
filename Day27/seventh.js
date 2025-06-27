@@ -24,9 +24,9 @@ console.log(students);
 const myarray=[1,true,"Purnima","🔥"];
 console.log(myarray);
 
-// ///how to find the index no of certain value//
-// console.log(myarray.indexOf("Purnima"));
+///how to find the index no of certain value//
+console.log(myarray.indexOf("Purnima"));
 
-// ///to reverse the value of index//
-// students.reverse();
-// console.log(students);
+///to reverse the value of index//
+students.reverse();
+console.log(students);
