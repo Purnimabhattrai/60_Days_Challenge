@@ -2,7 +2,7 @@
  //used when we have to store multiple values in one variable//
 
  const students=["purnima","prejibsa","jyoti","basanta"];
- console.log(students.length);///students garda list aauxa sabbai ko and student.length garda katiota xan value aauxa///
+ console.log(students.length);///students garda list aauxa sabbai ko and student.length garda kati ota xan value aauxa///
  students[0]="Purnima Bhattrai"; //we can change the value of the specified index in array//
  console.log(students[0]); //[0]index value dida tyo index ma jun item xa tesko details dinxa///
 
