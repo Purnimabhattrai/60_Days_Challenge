@@ -34,3 +34,4 @@
  let sarray=numbers.splice(1,4);//index value is used//
  console.log(sarray);
 console.log(numbers);
+
