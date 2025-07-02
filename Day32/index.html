@@ -38,8 +38,16 @@
      console.log(dayone.parentElement);//gives the parent element of dayone in tree structure//
      console.log(dayone.nextElementSibling);///gives the next sibling of the item dayone in tree structure//
     console.log("NODES:", parent.childNodes);//gives the node list of dom tree structure//it counts all the lines in addition with the line break/ enter we give//
-    
 
+     const div= document.createElement('div');
+     console.log(div);
+     div.className="main";
+     div.id= Math.round(Math.random()* 10+1)//this will generate a random id //
+     div.setAttribute("title", "generated title");
+     div.style.backgroundColor="green";
+     div.style.padding='10px';
+     const addText= document.createTextNode("purnima");
+     div.appendChild(addText);
 </script>
 
  </html>
