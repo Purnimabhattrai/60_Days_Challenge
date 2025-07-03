@@ -27,5 +27,13 @@
   }
 
   addOptiLanguage('golang');
+
+  //EDIT//
+  const secondLanguage= document.querySelector("li:nth-child(2)")
+   <!-- secondLanguage.innerHTML="MOJOS"//not optimized way as all the value will be traversed to findthis second one// --> 
+
+    const newli=document.createElement('li')
+    newli.textContent='Mojo'
+    secondLanguage.replaceWith(newli)///optimied approach//
 </script>
 </html>
