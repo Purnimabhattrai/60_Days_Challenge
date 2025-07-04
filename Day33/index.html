@@ -14,6 +14,7 @@
   function addLanguage(langName) {
     const li = document.createElement('li');
     li.innerHTML = `${langName}`;
+  
     document.querySelector('.language').appendChild(li);
   }
 
@@ -30,9 +31,10 @@
 
   // EDIT
   const secondLanguage = document.querySelector("li:nth-child(2)");
+     <!-- secondLanguage.innerHTML="MOJOS"//not optimized way as all the value will be traversed to find this second one// -->
   const newli = document.createElement('li');
   newli.textContent = 'Mojo';
-  secondLanguage.replaceWith(newli);
+  secondLanguage.replaceWith(newli);//optimized approach//
 
   const firstLanguage = document.querySelector("li:first-child");
   firstLanguage.outerHTML = '<li>TypeScript</li>';
