@@ -8,3 +8,4 @@ colorBoxes.forEach(box => {
     document.body.style.backgroundColor = color;
   });
 });
+
