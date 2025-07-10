@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2>Images</h2>
+    <div>
+        <ul id="images">
+            <li> <img src="giraffe.png" id="giraffe"img width="200px">giraffe</li>
+            <li><img src="penguin.png" id="penguin" img width="200px">penguin</li>
+            <li><a style="color:rgb(55, 127, 190)" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+
+ </body>
+ <script>
+   // document.getElementById('giraffe').addEventListener('click',function(e){
+       // console.log(e);
+   // },false)   //default false hunxa used foe event bubbling
+    //true ni hunxa ,it is used for event capturing
+//type, timestamp, defaultPrevent, target, toElement, srcElement, currentTarget,
+//altkey, keycode
+//clientX, clientY, screenX, screenY
+
+//Event Bubbling
+        //document.getElementById('images').addEventListener('click',function(e){
+        //  console.log(e);
+        // },false) 
+
+        //document.getElementById('penguin').addEventListener('click',function(e){
+        // console.log("penguin clicked");
+        //e.stopPropgation(); // this will prevent the event to bubble up to next event so only penguin clicked event will run not the image clicked 
+        // },false) 
+
+        //this is event bubbling which menas the  specific event will run first then the outer event ie: first the penguin clicked runs and then only the image clicked 
+    
+ //event Capturing       
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e);
+   },true)
+    //document.getElementById('penguin').addEventListener('click',function(e){
+      //  console.log("penguin clicked");
+    //},true)
+    //this is called event capturing which means that the event will run from top to bottom ie: first image clicked will run and then the penguin clicked
+   
+    document.getElementById('google').addEventListener
+    ('click',function(e){
+        e.preventDefault();
+        console.log("google clicked")
+
+    }, false)
+    
+
+
+ </script>
+ </body>
+ </html>
