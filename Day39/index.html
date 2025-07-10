@@ -38,21 +38,31 @@
         //this is event bubbling which menas the  specific event will run first then the outer event ie: first the penguin clicked runs and then only the image clicked 
     
  //event Capturing       
-    document.getElementById('images').addEventListener('click',function(e){
-        console.log(e);
-   },true)
+   // document.getElementById('images').addEventListener('click',function(e){
+    //    console.log(e);
+  // },true)
     //document.getElementById('penguin').addEventListener('click',function(e){
       //  console.log("penguin clicked");
     //},true)
     //this is called event capturing which means that the event will run from top to bottom ie: first image clicked will run and then the penguin clicked
    
-    document.getElementById('google').addEventListener
-    ('click',function(e){
-        e.preventDefault();
-        console.log("google clicked")
+    ///document.getElementById('google').addEventListener
+    //('click',function(e){
+    //    e.preventDefault();//stop bubbling
+    //    e.stopPropogation();
+     //    console.log("google clicked")
+      //}, false)
 
-    }, false)
-    
+    document.querySelector('#images').addEventListener
+    ('click',function(e){
+        console.log(e.target.parentNode);
+        //target: this will give kun thau ma target vayera event occured vaxa ie: giraffe ,penguin
+        //target.parentNode: this wil give the parent node of the target 
+        let removeIt= e.target.parentNode
+        removeIt.remove()//removes the target but list item ma click garda it will all the items its parent node which is ul 
+        
+    })
+
 
 
  </script>
