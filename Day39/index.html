@@ -53,18 +53,26 @@
      //    console.log("google clicked")
       //}, false)
 
-    document.querySelector('#images').addEventListener
-    ('click',function(e){
-        console.log(e.target.parentNode);
+   // document.querySelector('#images').addEventListener
+    //('click',function(e){
+      //  console.log(e.target.parentNode);
         //target: this will give kun thau ma target vayera event occured vaxa ie: giraffe ,penguin
         //target.parentNode: this wil give the parent node of the target 
-        let removeIt= e.target.parentNode
-        removeIt.remove()//removes the target but list item ma click garda it will all the items its parent node which is ul 
-        
-    })
+       // let removeIt= e.target.parentNode
+       // removeIt.remove()//removes the target but list item ma click garda it will all the items its parent node which is ul 
 
-
+   // })
+     document.querySelector('#images').addEventListener
+     ('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            let removeIt =e.target.parentNode
+            removeIt.remove()
+        }
+     })
 
  </script>
  </body>
  </html>
+ 
