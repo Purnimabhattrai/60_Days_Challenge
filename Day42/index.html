@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1> Project1</h1>
+    <button id="stop">stop</button>
+ </body>
+ <script>
+    setTimeout(function(){
+        console.log("purnima");
+    },2000)     //this code will be executed after 2 sec
+
+   const sayPurnima=function(){
+    console.log("Purnima");
+   }
+   const changeText = function(){
+    document.querySelector('h1').innerHTML="JS Series"//project change into js series
+   }
+   const changeMe= setTimeout(changeText,2000)
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)//when button is clicked the change me function stopped
+    console.log("STOPPED");
+   })
+
+ </script>
+ </html>
