@@ -18,7 +18,7 @@
  })
 
 
- newPromise(function(resolve,reject){
+ new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log("Async task 2"); //first ma yo execute hunxa
         resolve();//then this will tell .then to execute its function
@@ -30,7 +30,7 @@
 
  const promiseThree= new Promise(function(resolve,reject){
     setTimeout(function(){
-        resolve({unsername:"purnima",rollno:29})
+        resolve({unsername:"purnima",rollno:29})//data base bata liuney kam ni resolve() ley garxa
     },1000) 
  })
  promiseThree.then(function(user){
