@@ -26,3 +26,13 @@
  }).then(function(){
     console.log("Async 2 resolved");//at last this will be executed
  })
+
+
+ const promiseThree= new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({unsername:"purnima",rollno:29})
+    },1000) 
+ })
+ promiseThree.then(function(user){
+    console.log(user);
+ })
