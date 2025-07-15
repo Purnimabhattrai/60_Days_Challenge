@@ -65,9 +65,6 @@
    })
    .finally(()=>console.log("the promise is finally resolved or rejected"))
 
-
-
-
    const promiseFive= new Promise(function(resolve,reject){
     setTimeout(function(){
       let error= true
@@ -83,7 +80,7 @@
 
    async function consumepromiseFive(){
       try{
-         const response= await promiseFiveconsole.log(response);
+         const response = await promiseFive
          console.log(response);
       }catch(error){
          console.log(error);
