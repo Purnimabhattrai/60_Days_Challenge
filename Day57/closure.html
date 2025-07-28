@@ -6,25 +6,37 @@
     <title>Document</title>
  </head>
  <body>
-    
+    <button id="green">Green</button>
+    <button id="orange">Orange</button>
  </body>
  <script>
-    function outer(){
-        let username= "Purnima"
-        console.log("OUTER",secret);
-        function inner(){
-            let secret="1234"
-            console.log("inner",username);
+   // function outer(){
+       // let username= "Purnima"
+       // console.log("OUTER",secret);
+        //function inner(){
+          //  let secret="1234"
+            //console.log("inner",username);
 
+        //}
+        //function innerTwo(){
+          //  console.log("innerTwo",username);
+            //console.log(secret);
+        //}
+        //inner()
+        //innerTwo()
+    //}
+    //outer()
+    //console.log("TOO OUTER", username);
+ </script>
+ <script>
+    function clickHandler(color){
+        //document.body.style.backgroundColor=`${color}`
+        return function(){
+            document.body.style.backgroundColor=`${color}`
         }
-        function innerTwo(){
-            console.log("innerTwo",username);
-            console.log(secret);
-        }
-        inner()
-        innerTwo()
     }
-    outer()
-    console.log("TOO OUTER", username);
+    document.getElementById('orange').onclick=clickHandler("orange")
+    document.getElementById('green').onclick=clickHandler("green")
+
  </script>
  </html>
