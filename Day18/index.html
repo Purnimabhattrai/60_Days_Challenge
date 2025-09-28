@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="container">
       <h1>Purnima Bhattrai</h1>
@@ -15,31 +16,34 @@
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav class="about">
     <ul class="container"> 
       <li><a href="#about">About</a></li>
-      <li><a href="./skills.html">Skills</a></li>
-      <li><a href="./project.html">Projects</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- About Section -->
   <section id="about" class="container">
-  <div class="about-content">
-    <div class="about-image">
-      <img src="purnima.jpg" alt="Purnima Bhattrai" />
+    <div class="about-content">
+      <div class="about-image">
+        <img src="purnima.jpg" alt="Purnima Bhattrai" />
+      </div>
+      <div class="about-text">
+        <h2>✨ About Me ✨</h2>
+        <p>Hello! I'm Purnima Bhattrai, a fifth-semester Computer Engineering student with a deep curiosity for technology and a strong passion for continuous learning. I am currently diving into the exciting world of JavaScript, expanding my skills in building interactive, dynamic web experiences.</p>
+        <br>
+        <p>My journey in tech has been shaped by hands-on projects and a growing proficiency in HTML, CSS, and responsive design. I believe that every challenge is an opportunity to grow, and I enjoy bringing ideas to life through clean code and thoughtful design. With a creative mindset and a drive for innovation, I aim to build real-world tech solutions that are user-friendly and impactful.</p>
+      </div>
     </div>
-    <div class="AboutMe">
-      <h2> ✨About Me ✨</h2>
-      <p>Hello! I'm Purnima Bhattrai, a fourth-semester Computer Engineering student with a deep curiosity for technology and a strong passion for continuous learning. I am currently diving into the exciting world of JavaScript, expanding my skills in building interactive, dynamic web experiences.</p>
-      <br>
-      <p>My journey in tech has been shaped by hands-on projects and a growing proficiency in HTML, CSS, and responsive design. I believe that every challenge is an opportunity to grow, and I enjoy bringing ideas to life through clean code and thoughtful design. With a creative mindset and a drive for innovation, I aim to build real-world tech solutions that are user-friendly and impactful.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-  <section id="skills" class="container">
+  <!-- Skills -->
+  <div>
+   <section id="skills" class="container">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>HTML</li>
@@ -49,35 +53,91 @@
       <li>Unity</li>
       <li>MySQL</li>
     </ul>
-  </section>
+   </section>
+  </div> 
+  <!--Education-->
 
-  <section id="projects" class="container">
+<section id="education" class="container">
+  <h2>My Education</h2>
+  <div class="education-list">
+    
+    <div class="education-card">
+      <h4>Nepal College Of Information and Technology</h4>
+      <p><strong>Bachelor in Computer Engineering</strong></p>
+      <p>Currently in Fifth Semester</p>
+    </div>
+
+    <div class="education-card">
+      <h4>Gorkha Model Secondary School</h4>
+      <p><strong>High School</strong></p>
+      <p>GPA: 3.08 / 4.00</p>
+    </div>
+
+    <div class="education-card">
+      <h4>Buddha Jyoti Secondary School</h4>
+      <p><strong>Grade 10</strong></p>
+      <p>GPA: 4.00 / 4.00</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Projects -->
+  <div>
+   <section id="projects" class="container">
     <h2>Projects</h2>
     <div class="project-card">
       <h3>NEPART</h3>
-      <p>An online shopping website for Nepali handicrafts.</p>
+      <p>An online shopping website to sell Nepali handicrafts.</p>
+      <p>A platform to sell authentic handmade Nepali products.</p>
     </div>
-  </section>
-
-  <section id="contact" class="container">
+   </section>
+  </div>
+  <!-- Contact -->
+  <div> 
+   <section id="contact" class="container">
     <h2>Contact Me</h2>
-   
-    <hr>
-    <h5>You can directly contact me at: <a href="mailto:purnimabhattrai.72@gmail.com">purnimabhattrai.72@gmail.com</a></h5>
-    <hr>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <div class="social-links">
+      <a href="https://www.instagram.com/purnimabhattrai09/" target="_blank">Instagram</a>
+      <a href="https://x.com/Purnima2062" target="_blank">Twitter</a>
+      <a href="https://github.com/Purnimabhattrai" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/purnima-bhattrai-aba922356" target="_blank">LinkedIn</a>
+    </div>
 
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b101dea5-1ead-4b2a-8b8e-1701bea05955" />
+      <input type="text" name="name" required placeholder="Your Name"/>
+      <input type="email" name="email" required placeholder="Your Email"/>
+      <textarea name="message" required placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+   </section>
+  </div> 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Purnima Bhattrai. All rights reserved.</p>
     </div>
   </footer>
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sections.forEach(sec => sec.classList.add("dimmed"));
+        entry.target.classList.remove("dimmed");
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
