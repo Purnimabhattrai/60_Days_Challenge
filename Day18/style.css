@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 /* Reset & Base */
 * {
   margin: 0;
@@ -18,7 +24,7 @@ body {
   background: var(--background);
   color: var(--text-dark);
   line-height: 1.6;
-  scroll-behavior: smooth;   /* ✅ Smooth Scroll */
+  scroll-behavior: smooth;   /* Smooth scroll for nav links */
 }
 
 /* Container */
@@ -116,7 +122,7 @@ nav a:hover {
 .skills-list li {
   background: var(--light-blue);
   color: var(--text-light);
-  padding: 12px 24px;
+  padding: 12px 40px;
   border-radius: 10px;
   font-weight: bold;
   transition: all 0.3s;
@@ -159,35 +165,81 @@ nav a:hover {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 
-/* Contact */
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+#contact .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#contact .social-links a {
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#contact .social-links a:hover {
+  color: var(--dark-blue);
+  transform: scale(1.1);
+}
+
+/* Contact Form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 15px;
+}
+
 #contact input,
 #contact textarea {
   padding: 14px;
   border: 2px solid var(--light-blue);
-  border-radius: 6px;
+  border-radius: 8px;
   outline: none;
   transition: all 0.3s;
+  width: 100%;
 }
+
 #contact input:focus,
 #contact textarea:focus {
   border: 2px solid var(--dark-blue);
   box-shadow: 0px 0px 10px rgba(35,36,126,0.3);
 }
+
 #contact button {
   background: var(--dark-blue);
   color: var(--text-light);
   border: none;
   padding: 14px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s;
+  width: 100%;
 }
+
 #contact button:hover {
   background: var(--light-blue);
-  transform: scale(1.08);
+  transform: scale(1.05);
   box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
 }
+
 #contact button:active {
   transform: scale(0.95);
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2) inset;
@@ -202,6 +254,443 @@ footer {
   margin-top: 50px;
   transition: background 0.3s;
 }
+
 footer:hover {
   background: var(--light-blue);
 }
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --- Home Section --- */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #343bbc, #343bbc);
+  color: white;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1 1 45%;
+  text-align: left;
+  padding: 20px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-text h1 span {
+  color: #ffd6ff;
+}
+
+.home-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.home-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.home-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #9894ee;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #7f5af0;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd6ff;
+  color: #4a148c;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in.delay1 {
+  animation-delay: 0.5s;
+}
+
+.fade-in.delay2 {
+  animation-delay: 1s;
+}
+
+.fade-in.delay3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-text, .home-image {
+    flex: 1 1 100%;
+  }
+
+  .home-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .home-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
+/* Sticky (Floating) Navigation */
+nav.about {
+  position: sticky;
+  top: 0;
+  background: rgba(55, 76, 159, 0.9); /* matches your purple theme */
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav.about ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav.about ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+nav.about ul li a:hover {
+  color: #d6b3ff;
+  transform: scale(1.05);
+}
+
+/* Optional: to prevent content from hiding under the nav when scrolled */
+section {
+  scroll-margin-top: 70px;
+}
+/* ==== HOME SECTION ==== */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: linear-gradient(120deg, #00133f, #022859);
+  color: white;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* === Text Section === */
+.text-section p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.text-section h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #e6ff7d;
+}
+
+.highlight {
+  color: #e6ff7d;
+}
+
+/* Typing Animation */
+.typing-animation {
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 320px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* === Buttons === */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #0d1b4d;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #162b7d;
+  transform: translateY(-3px);
+}
+
+.btn.hire {
+  background: #fff;
+  color: #0d1b4d;
+}
+
+.btn.hire:hover {
+  background: #e6ff7d;
+  color: #000;
+}
+
+/* === Social Icons === */
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  background: #0d1b4d;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background: #162b7d;
+}
+
+/* === Image Section === */
+.image-section img {
+  width: 320px;
+  border-radius: 10px;
+  animation: slideInRight 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* === Animations === */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 1s ease-out forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.3s ease forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideRight 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section img {
+    width: 250px;
+  }
+}
+
